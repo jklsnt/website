@@ -1,6 +1,6 @@
 # website
 
-the official website, for sanity.gq. rewritten.
+the official website, for jklsnt. rewritten.
 
 planned stack:
 
