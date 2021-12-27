@@ -19,6 +19,13 @@ jobs:
         cache: 'npm'
     - name: Install Vercel CLI
       run: npm i -g vercel
+    - name: Make directory for Vercel
+      run: mkdir .vercel
+    - name: Dump project info
+      shell: bash
+      env:
+        PROJECT: ${{{ secrets.VERCEL_PROJECT }}
+      run: echo "$PROJECT" > .vercel/project.json
     - name: Deploy Site
       shell: bash
       env:
